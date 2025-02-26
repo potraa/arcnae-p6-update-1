@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=4 uid="uid://70g37k3jxsb6"]
+[gd_scene load_steps=17 format=4 uid="uid://70g37k3jxsb6"]
 
 [ext_resource type="Script" path="res://Levels/scripts/level.gd" id="1_eri54"]
 [ext_resource type="PackedScene" uid="uid://bj4c182gxxq0c" path="res://Tile Maps/grass 01.tscn" id="1_xmpmu"]
+[ext_resource type="AudioStream" uid="uid://v1bk48dkcjxp" path="res://Levels/Music/merx-market-song-33936.mp3" id="2_gm04v"]
 [ext_resource type="PackedScene" uid="uid://bbei2f5oq8mqk" path="res://Props/Plants/plant.tscn" id="2_whikr"]
 [ext_resource type="PackedScene" uid="uid://0n87a08c01v1" path="res://Levels/player_spawn.tscn" id="3_6albl"]
 [ext_resource type="PackedScene" uid="uid://dvdbvv36i7bcl" path="res://npc/npc.tscn" id="6_v47ui"]
@@ -11,10 +12,15 @@
 [ext_resource type="PackedScene" uid="uid://ckxfv6ye1w2rv" path="res://Interactables/dialouge/dialouge_interaction.tscn" id="9_qs82d"]
 [ext_resource type="Script" path="res://Interactables/dialouge/scripts/dialouge_text.gd" id="10_qfrab"]
 [ext_resource type="Resource" uid="uid://jkobtwasorw1" path="res://npc/00_npcs/00_hero.tres" id="11_q0nmb"]
+[ext_resource type="PackedScene" uid="uid://cub1qpndg3kpf" path="res://Battle(Physics)/BattleSpawn/battle_spawn.tscn" id="12_rkbvp"]
+[ext_resource type="PackedScene" uid="uid://chpge57ey2mhs" path="res://Battle(Physics)/BattleScene/battles/battle02.tscn" id="13_d1ufc"]
+[ext_resource type="PackedScene" uid="uid://dwb6px2x3wtu5" path="res://GUI/scene_transition/battle_transition.tscn" id="14_q323n"]
+[ext_resource type="PackedScene" uid="uid://covp82mlvfv38" path="res://Enemies/Goblin/goblin.tscn" id="15_2ouem"]
 
 [node name="Village" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_eri54")
+music = ExtResource("2_gm04v")
 
 [node name="Graphics" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -183,7 +189,7 @@ position = Vector2(-503, -65)
 
 [node name="PlayerSpawn" parent="." instance=ExtResource("3_6albl")]
 y_sort_enabled = true
-position = Vector2(351, 270)
+position = Vector2(-205, 872)
 
 [node name="VillageGate" parent="." instance=ExtResource("9_ajvn1")]
 position = Vector2(432, -96)
@@ -230,3 +236,26 @@ script = ExtResource("10_qfrab")
 text = "
 Sure, I'm on the job"
 npc_info = ExtResource("11_q0nmb")
+
+[node name="Battle" type="Node2D" parent="."]
+
+[node name="BattleSpawn" parent="Battle" instance=ExtResource("12_rkbvp")]
+position = Vector2(81, 359)
+battle_scene = ExtResource("13_d1ufc")
+
+[node name="BattleTransition" parent="Battle" instance=ExtResource("14_q323n")]
+layer = 0
+
+[node name="Enemy" type="Node2D" parent="."]
+
+[node name="goblin" parent="Enemy" instance=ExtResource("15_2ouem")]
+position = Vector2(-254, 332)
+
+[node name="goblin2" parent="Enemy" instance=ExtResource("15_2ouem")]
+position = Vector2(-300, 296)
+
+[node name="goblin3" parent="Enemy" instance=ExtResource("15_2ouem")]
+position = Vector2(-204, 289)
+
+[node name="goblin4" parent="Enemy" instance=ExtResource("15_2ouem")]
+position = Vector2(-248, 245)
