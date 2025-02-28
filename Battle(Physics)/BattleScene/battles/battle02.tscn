@@ -100,6 +100,7 @@ size_flags_horizontal = 2
 size_flags_vertical = 3
 text = "option 1
 "
+autowrap_mode = 2
 
 [node name="Button2" type="Button" parent="Control/Choices/Control"]
 layout_mode = 2
@@ -111,6 +112,7 @@ size_flags_horizontal = 2
 size_flags_vertical = 3
 text = "option 2
 "
+autowrap_mode = 2
 
 [node name="Button3" type="Button" parent="Control/Choices/Control"]
 layout_mode = 2
@@ -122,6 +124,7 @@ size_flags_horizontal = 2
 size_flags_vertical = 3
 text = "option 3
 "
+autowrap_mode = 2
 
 [node name="Button4" type="Button" parent="Control/Choices/Control"]
 layout_mode = 2
@@ -132,6 +135,7 @@ offset_bottom = 111.0
 size_flags_horizontal = 2
 size_flags_vertical = 3
 text = "option 4"
+autowrap_mode = 2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_vbgbt")

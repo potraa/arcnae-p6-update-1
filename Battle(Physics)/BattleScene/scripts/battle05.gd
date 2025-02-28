@@ -2,9 +2,9 @@ class_name Battle05 extends CanvasLayer
 
 var questions = [
 	{
-		"question": "If Parfum is 5000 km away from Totoy's current location, he is tasked to deliver the message exactly in 3 days, what should be his exact average speed? (km/h)",
-		"options": ["69.44 km/h", "58.34 km/h", "105 km/h", "72.43 km/h"],
-		"correct_index": 0
+		"question": "Totoy and Lander are in an endurance competition. Totoy runs at a constant speed of 10 m/s for 12 minutes without stopping. How far does he travel during the competition? Assuming that Lander reached 7 km, does Tototy win the match? ",
+		"options": ["Yes, because Totoy travelled 9.5km", "No, because Totoy travelled 5 km", "Yes, because Totoy travelled 7.2 km", "No, because Totoy travelled 6.3 km"],
+		"correct_index": 2
 	}
 ]
 

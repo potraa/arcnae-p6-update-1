@@ -80,7 +80,7 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -263.0
-offset_top = -135.0
+offset_top = -236.0
 offset_right = -6.0
 offset_bottom = -10.0
 grow_horizontal = 0
@@ -95,43 +95,51 @@ layout_mode = 2
 offset_left = 2.0
 offset_top = -3.0
 offset_right = 110.0
-offset_bottom = 52.0
+offset_bottom = 100.0
 size_flags_horizontal = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 0
 text = "option 1
 "
+autowrap_mode = 2
 
 [node name="Button2" type="Button" parent="Control/Choices/Control"]
 layout_mode = 2
 offset_left = 118.0
 offset_top = -3.0
 offset_right = 226.0
-offset_bottom = 52.0
+offset_bottom = 100.0
 size_flags_horizontal = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 0
 text = "option 2
 "
+autowrap_mode = 2
 
 [node name="Button3" type="Button" parent="Control/Choices/Control"]
 layout_mode = 2
 offset_left = 2.0
-offset_top = 56.0
+offset_top = 108.0
 offset_right = 110.0
-offset_bottom = 111.0
+offset_bottom = 208.0
 size_flags_horizontal = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 0
 text = "option 3
 "
+autowrap_mode = 2
 
 [node name="Button4" type="Button" parent="Control/Choices/Control"]
 layout_mode = 2
 offset_left = 118.0
-offset_top = 56.0
+offset_top = 108.0
 offset_right = 226.0
-offset_bottom = 111.0
+offset_bottom = 206.0
 size_flags_horizontal = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 0
 text = "option 4"
+autowrap_mode = 2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_dtnnd")
